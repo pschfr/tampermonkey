@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Keep Sidebar Closer
 // @namespace    https://github.com/pschfr/stylish/tree/master/google-keep
-// @version      1.0.1
+// @version      1.0.3
 // @description  Closes the sidebar on page load
 // @author       Paul Schaefer
 // @match        keep.google.com/*
@@ -10,6 +10,6 @@
 
 (function() {
 	window.onload = function() {
-		document.getElementsByClassName('gb_1b')[0].click();
+		document.querySelectorAll('[aria-label="Main menu"]')[0].click();
 	};
 })();
