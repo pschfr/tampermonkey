@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         noopener
 // @namespace    https://github.com/pschfr/tampermonkey/tree/master/global/noopener
-// @version      1.0
+// @version      1.0.1
 // @description  This script appends `rel="noopener noreferrer"` to every link that has `target="_blank"`, as it prevents a major security risk.
 // @author       Paul Schaefer
 // @match        *://*/*
@@ -14,7 +14,7 @@
 
 		for (var i in allLinks) {
 			if (allLinks[i].target == '_blank') {
-				allLinks[i].rel = 'noopener noreferrer';
+				allLinks[i].rel += ' noopener noreferrer';
 			}
 		}
 	};
