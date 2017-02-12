@@ -7,3 +7,5 @@ Tampermonkey is a [Chrome](https://chrome.google.com/webstore/detail/dhdgffkkebh
 Each folder has a readme explaining what I fixed or adjusted.
 
 Also be sure to check out [stylish](https://github.com/pschfr/stylish), my custom CSS for other websites!
+
+`new.sh` is a shell script for creating a new script, with pre-filled areas for quick coding.
