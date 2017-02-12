@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Introduction and new folder name
-echo -e "\e[34m\e[1mNew Tampermonkey Script v1.0\e[0m"
+echo -e "\e[34m\e[1mNew Tampermonkey Script v1.0.1\e[0m"
 echo -ne "\nEnter folder name: "
 read -e NAME
 echo -ne "\nEnter website URL: "
@@ -34,8 +34,8 @@ cat <<EOF > script.js
 
 (function() {
 	window.onload = function() {
-    	// Your code here...
-	}
+		// Your code here...
+	};
 })();
 EOF
 
